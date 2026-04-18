@@ -1,0 +1,53 @@
+{
+  "name": "@pgambling/imgflip",
+  "version": "0.1.0",
+  "description": "TypeScript client, CLI, and Claude Code skill for the Imgflip meme API.",
+  "keywords": ["imgflip", "meme", "memes", "cli", "claude-code", "skill"],
+  "author": "Phil Gambling <pgambling@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "imgflip": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "skill",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.test.json",
+    "test": "node --test --import tsx \"test/**/*.test.ts\"",
+    "prepublishOnly": "npm run clean && npm run build && npm test"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgambling/imgflip.git"
+  },
+  "homepage": "https://github.com/pgambling/imgflip#readme",
+  "bugs": {
+    "url": "https://github.com/pgambling/imgflip/issues"
+  }
+}
