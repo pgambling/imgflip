@@ -1,4 +1,4 @@
-# @pgambling/imgflip
+# imgflip
 
 TypeScript library, CLI, and Claude Code skill for generating [Imgflip](https://imgflip.com) memes.
 
