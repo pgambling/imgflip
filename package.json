@@ -1,8 +1,15 @@
 {
   "name": "@pgambling/imgflip",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript client, CLI, and Claude Code skill for the Imgflip meme API.",
-  "keywords": ["imgflip", "meme", "memes", "cli", "claude-code", "skill"],
+  "keywords": [
+    "imgflip",
+    "meme",
+    "memes",
+    "cli",
+    "claude-code",
+    "skill"
+  ],
   "author": "Phil Gambling <pgambling@gmail.com>",
   "license": "MIT",
   "type": "module",
